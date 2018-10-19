@@ -26,4 +26,8 @@ grep DNA2.txt | tr "T" "U" | > RNA.txt
 
 #make  complementary string
 
-grep DNA2.txt | sed 's/[^A]/T/g' | sed 's/[^T]/A/g' | sed 's/[^C]/G/g' | sed 's/[^G]/C/g'
+cat DNA3.txt | tr "ATCG" "TAGC"
+
+#make reverse complementary string
+
+cat DNA3.txt | tr "ATCG" "TAGC" | rev
